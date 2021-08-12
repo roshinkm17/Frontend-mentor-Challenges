@@ -1,0 +1,126 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Montserrat";
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#card {
+  height: 70%;
+  width: 350px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.082);
+  border-radius: 14px;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+#header-img {
+  height: 200px;
+  background-image: url("./images/illustration-hero.svg");
+  background-size: contain;
+  background-position: center;
+}
+#order-summary {
+  padding: 10px 30px 20px 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#title {
+  font-size: 1.3em;
+  font-weight: 900;
+}
+#desc {
+  text-align: center;
+  font-size: 0.8em;
+  color: darkgrey;
+  font-weight: 450;
+}
+#price-card {
+  background-color: rgba(173, 216, 230, 0.247);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 10px;
+  border-radius: 20px;
+}
+#music-icon {
+  background-color: #779aa680;
+  padding: 10px;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+}
+#plan-price {
+  margin-top: 5px;
+  color: darkgrey;
+  font-size: 0.8em;
+  font-weight: 450;
+}
+#change-btn {
+  font-weight: bold;
+  font-size: 0.8em;
+  transition: 0.2s;
+}
+#change-btn:hover {
+  color: #766cf1;
+  text-decoration: none;
+}
+#proceed-btn-link {
+  width: 100%;
+}
+#proceed-btn {
+  cursor: pointer;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: #382ae1;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+#proceed-btn:hover {
+  background-color: #766cf1;
+}
+#cancel-btn {
+  cursor: pointer;
+  color: rgb(141, 141, 141);
+  font-weight: bold;
+  background: none;
+  border: none;
+  transition: 0.2s;
+}
+#cancel-btn:hover {
+  color: rgb(100, 100, 100);
+}
+
+@media (max-width: 1000px) {
+  body {
+    background-color: #d6e1ff;
+  }
+}
+
+@media (max-width: 380px) {
+    #card {
+        width: 100%;
+        margin: 20px;
+    }
+    #music-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
